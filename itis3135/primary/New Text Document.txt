@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gage Cottrell's Goofy Cat</title>
+    <link href="styles/default.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>Gage Cottrell's Goofy Cat</h1>
+</header>
+<main>
+    <h2>Weclome to my first page!</h2>
+    <p>Pictures will go here</p>
+    <p>Caption will go here</p>
+    <p>Bullets will go hjere</p>
+    <p>Glad you could make it. Come back early and often for updates! :D</p>
+</main>
+<footer>
+    <p>menu of links will go here</p>
+    Site designed by Gage Cottrell. %copy;2023
+</footer>
+</body>
+</html>

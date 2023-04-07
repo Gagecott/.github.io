@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Goofy Cat Productions</title>
+    <link href="styles/default.css" rel="stylesheet">
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+        body {
+        background-color: #320A28;
+        color: #AA0E3D;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .calculator {
+        height: 400px;
+        width: 400px;
+        padding: 10px;
+        background-color: #200a32
+    }
+   button {
+        width: 80px;
+        height: 70px;
+        font-family: 'signika', sans-serif;
+        background-color: rgb(70, 70, 204);
+        border:rgb(105, 105, 207) 1px;
+        border-radius: 3px;
+    }
+    button:active {
+        background-color:aqua;
+    }
+    .screenDisplay {
+        width: 100%;
+        height: 70%;
+        background-color:#631950;
+    }
+
+    a:link {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: darkgreen;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+</style>
+</head>
+<body>
+<header>
+    <h1>Gage Cottrell's Goofy Cat</h1>
+    <h2>My attempt at making a calculator.</h2>
+    <h3>Tutorial not done as try works just fine.</h3>
+    <script src="scripts/calculator_try.js">
+    </script>
+</header>
+<main>
+    <table class="calculator" >
+        <tr> 
+           <td colspan="3"> <input  class="screenDisplay" type="text" id="results" disabled /> </td> 
+            <td> <button id="clearDisplay" value="c" onclick="clearText()"> C</button></td>
+        </tr>
+            
+        <tr>
+   <td> <button id = "1" value="1" onclick="show('1')"> 1 </button> </td>
+   <td> <button id = "2" value="2" onclick="show('2')"> 2 </button> </td>
+   <td> <button id = "3" value="3" onclick="show('3')"> 3 </button> </td>
+   <td> <button id = "/" value="/" onclick="show('/')"> / </button> </td>
+</tr>
+<tr>
+
+</tr>
+    <tr>
+    <td> <button id = "4" value="4" onclick="show('4')"> 4 </button> </td>
+    <td> <button id = "5" value="5" onclick="show('5')"> 5 </button> </td>
+    <td> <button id = "6" value="6" onclick="show('6')"> 6 </button> </td>
+    <td> <button id = "+" value="+" onclick="show('+')"> + </button> </td>
+    </tr>
+    <tr>
+    <td> <button id = "7" value="7" onclick="show('7')"> 7 </button> </td>
+   <td> <button id = "8" value="8" onclick="show('8')"> 8 </button> </td>
+    <td>  <button id = "9" value="9" onclick="show('9')"> 9 </button> </td>
+    <td> <button id = "-" value="-" onclick="show('-')"> - </button> </td>
+    </tr>
+    <tr>
+    <td> <button id = "." value="." onclick="show('.')"> . </button> </td>
+   <td> <button id = "0" value="0" onclick="show('0')"> 0 </button> </td>
+    <td>  <button id = "=" value="=" onclick="calculate()"> = </button> </td>
+    <td> <button id = "*" value="*" onclick="show('*')"> * </button> </td>
+    </tr>
+    </table>
+
+</main>
+<footer>
+    <p><a href="index.html">Back to my 3135 Course!</a></p>
+    <p><a href="goofycatproductions.com/index.html">Site designed by Gage Cottrell</a></p>
+</footer>
+</body>

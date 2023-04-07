@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My gaming hobby!</title>
+    <link href="styles/default.css" rel="stylesheet">
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+        html, body {
+        background-color: #200a32;
+        color: #AA0E3D;
+        font-family: 'signika', sans-serif;
+        min-width: 290px;
+    }
+    h2 {
+        
+        font-family: 'Lato', sans-serif;
+    }
+    a:link {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: darkgreen;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: #AA0E3D;
+  
+}
+
+header {
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+.Main-Doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: #AA0E3D;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #f77ca1;
+  text-decoration: none;
+  cursor: pointer;
+}
+#navbar a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#navbar a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.Main-Doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .slides img {
+      display: none;
+}
+
+section {
+    padding: 80px;
+}
+
+#timeline_img {
+  padding: 10px;
+  margin: 0;
+}
+#img_caption {
+  margin: 15px 0 5px 0;
+}
+#img_border {
+    background: #150720;
+  padding: 10px;
+
+}
+.image {
+    max-width: 100%;
+  height: auto;
+}
+figcaption {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
+}
+
+</style>
+</head>
+<body>
+<header>
+    <script
+			  src="https://code.jquery.com/jquery-3.6.4.min.js"
+			  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+			  crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      var nextSlide = $(".slides img:first-child");
+      var slideSource;
+      var showSlideShow = function () {
+        $(".slide").fadeOut(1000,function () {
+            if (nextSlide.length == 0){
+            nextSlide = $(".slides img:first-child");
+        }
+        else {
+            nextSlide = nextSlide.next();
+        }
+
+    slideSource = nextSlide.attr("src");
+    $(".slide").attr("src", slideSource).fadeIn(1000);
+    }
+    );
+};
+
+var timer = setInterval(showSlideShow, 5000);
+$(".slide").click(function () {
+    if (time != null) {
+        clearInterval(timer);
+        timer = null;
+    }
+    else {
+        timer = setInterval(runSlideShow, 5000);
+    }
+}
+);
+}
+);
+</script>  
+</header>
+<main class="Main-Doc">
+    <h1>Gage Cottrell's Goofy Cat</h1>
+    <nav id="navbar">
+        <header>My gaming hobby!</header>
+        <ul> 
+            <li><a class="nav-link" href="#What_does_this_page_offer?">What does this page offer?</a></li>
+    <li>
+      <a class="nav-link" href="#Main_Tyrants">Main Tyrants</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#Video_Game_History">Video Game History</a>
+    </li>
+    <li><a class="nav-link" href="#Where_to_play_games?">Where to play games?</a></li>
+    <li><a class="nav-link" href="#How_games_are_made">How games are made</a></li>
+    <li>
+      <a class="nav-link" href="#Why_do_I_enjoy_games?">Why do I enjoy games?</a>
+    </li>
+        </ul>
+    </nav>
+    <section id="What_does_this_page_offer?"> 
+        <h2>My gaming hobby!</h2>
+            <h3>What does this page offer?</h3>
+            <p>Hello and welcome to my gaming hobby page! This website serves as essentially one big informative document about all things related to video games! Here you can learn about many different things in the gaming world, such as the main platforms for gaming, the companies that dominate the markets, and the history of video games as a whole.</p>
+            <p>Video games and gaming itself hold a special place in my heart, as I grew up playing games, my first game being the Lego Star wars on the gamecube when I was 4, ever since then I've delved deeped into all things video games, going from Nintendo to Microsoft, and then from Console to PC, Im happy to be able to share information about the gaming world with you!</p>
+            
+            <img class="slide" src="images/video_games.jpg" >
+            <div class="slides"> 
+                <img src="images/video_games.jpg" class="image"/>
+                 <img src="images/game_controlllers.jpg" class="image"/>
+                 <img src="images/game_companies.jpg" class="image"/>
+                 <img src="images/game_developer.jpg" class="image"/>
+        </div>
+    </section>
+
+    <section id="Main_Tyrants"> 
+        <h2>My gaming hobby!</h2>
+            <h3>Who are the main tyrants of Video Games?</h3>
+            <p>There are 4 comapnies that dominate the video game Market. </p>
+            <table border="1">
+                <tr>
+                    <th>Company Name</th>
+                    <th>Game Platform</th>
+                    <th>Revenue (2022)</th>
+                </tr>
+                <tr>
+                    <th>Sony</th>
+                    <th>Console (Playstation)</th>
+                    <th>$28.2 Billion</th>
+                </tr>
+                <tr>
+                    <th>Microsoft</th>
+                    <th>Console (Xbox)</th>
+                    <th>$16.2 Billion</th>
+                </tr>
+                <tr>
+                    <th>Nintendo</th>
+                    <th>Console (Nintendo Switch)</th>
+                    <th>$13.8 Billion</th>
+                </tr>
+                <tr>
+                    <th>Valve</th>
+                    <th>PC (Steam)</th>
+                    <th>$13 Billion</th>
+                </tr>
+            </table>
+
+    </section>
+
+    <section id="Video_Game_History"> 
+        <div class="timeline">
+            <h2>My gaming hobby!</h2>
+            <h3>History of Video games </h3>
+            <p><figure id="img_border"><img src="images/Pong_creators.jpg" id="timeline-img" class="image"></p>
+                <figcaption id="img_caption">Ted Dabney, left, Nolan Bushnell, Fred Marincic and Allan Alcorn posing with a pong machine.</figcaption>
+            </figure>
+            <ul>
+                <li>1952: British professor A.S. Douglas creates "OXO", a computerized version of the game "tic-tac-toe".</li>
+                <li>1958: Physicist William Higinbotham creates "Tennis for Two," a Tennis game played on an oscilloscope.</li>
+                <li>1962: Steve Russel, at the Massachusetts Institute of Technology, invents a game called "Spacewar!", a space combat game for the PDP-1. It was the first video game that could be played on multiple computer installations.</li>
+                <li>1971: American engineers Nolan Bushnell and Ted Dabney found Atari.</li>
+                <li>1972: Atari releases arcade game "Pong", becoming the first popular video game. </li>
+                <li>1975: Atari releases the home version of "Pong".</li>
+                <li>1977: Atari releases the Atari 2600, starting the 2nd generation of video game consoles.</li>
+                <li>1981: Nintendo releases arcade game "Donkey Kong", introducing mario and the platforming genre to the world.</li>
+                <li>1983: The video game industry in the United States experiences a major crash, leading to the bankruptcy of multiple home computer and video game console companies.</li>
+                <li>1985: Nintendo releases the Nintendo Entertainment System (NES), that console was so popular that its widely considered the console that saved the video game industry.</li>
+                <li>1989: Nintendo releases the Gameboy, the first Portable gaming console.</li>
+                <li>1989: Sega releases the Genesis, becoming one of the first competitors to Nintendo.</li>
+                <li>1993: The Entertainment Software Rating Board is creating in response to Mortal Kombat, a game depicting blood and gore.</li>
+                <li>1993: id Software releases "Doom", popularizing the first person shooter genre.</li>
+                <li>1995: Sony releases the Playstation, pioneering 3D graphics and solidifying themselves as a major home console.</li>
+                <li>2001: Microsoft releases the Xbox, becoming one of the major home consoles.</li>
+                <li>2005-2006: Nintendo, Microsoft, and Sony releases the Wii, Xbox 360, and Playstation 3 respectively, starting off the age of High Definition gaming.</li>
+                <li>2009: Rovio releases "Angry Birds" on mobile devices, becoming a commercial hit and causing more games to release on devices like the iphone. </li>
+                <li>2012: Nintendo releases the Wii U, featuring touch screen remote control that allowed off-TV gaming, however the device was a commerical failure.</li>
+                <li>2013: Playstation and Microsoft release the Playstation 4 and Xbox one, starting 8th generation of video games.</li>
+                <li>2017: Nintendo Releases the Nintendo Switch, the Wii U's successor. This console allowed both TV-based and handheld based gaming </li>
+                <li>2020: Microsoft and Sony release the Xbox series X and S, and the Playstation 5 respectively, both offering 4k capabilities.</li>
+
+
+            </ul>
+            </div>
+            <p> </p>
+            
+    </section>
+
+    <section id="Where_to_play_games?"> 
+        <h2>My gaming hobby!</h2>
+            <h3>Where can I play video games?</h3>
+            <p> There are many different ways to play Video games. There are... </p>
+            <h3>Console games</h3>
+        <figure id="img_border">
+            <img src="images/xbox-series-x.jpg" class="image">
+            <figcaption>An image of the Xbox Series X.</figcaption>
+            </figure>
+                    <p>These video games are played through specialized computers created by companies like Sony, Microsoft, and Nintendo. These consoles are usually connected to a TV or monitor and the games are controlled using controllers meant for the console. This type of gaming is the most popular way to the more serious and complex side of gaming, as it offers the user high quality games made for the consoles to play from the comfort of their couch. </p>
+                    <h3>Mobile games</h3>
+                    <figure id="img_border">
+                    <img src="images/mobile_games.jpg" class="image">
+                    <figcaption>An individual playing a mobile game on their phone.</figcaption>
+        </figure>
+                <p>Mobile games: This type of gaming has become more popular over the years and is the easiest way to get into video games, as the majority of people own a smartphone. While there are complex and well-crafted mobile games out there, most of the mobile game library consists of very casual, easy to pick up games for their users, a lot of them being free to download. These can include things like idle games and puzzle games.  </p>
+                <h3>PC games</h3>
+                <figure id="img_border">
+                <img src="images/high-gaming-pc.jpg" class="image">
+                <figcaption>A high end gaming PC. </figcaption>
+                </figure>
+                <p>PC games: These video games are played on a personal computer or laptop using a mouse and keyboard, this way of gaming is definitely the most versatile, as the user has free range to modify and upgrade their hardware as they see fit. While PC games usually have the same games as consoles, PC gaming can offer higher quality graphics and more advanced features in games, as well as the ability to modify the game files to some games to add user created content to them.</p>
+            
+            
+    </section>
+
+    <section id="How_games_are_made">
+        <h2>My gaming hobby!</h2>
+            <h3>How are Video games made?</h3>
+            <figure id="img_border">
+            <img src="images/game_dev2.jpg" class="image">
+            <figcaption>A game developer creating a level.</figcaption>
+    </figure>
+            <p>The process of making video games is long, complex, and very costly, involving many different stages and plenty of different roles in order to create a game. The different type of people involved in this job include...</p>
+            <ul>
+                <li>Programmers: They write completely new source code for each game they create!</li>
+                <li>Artists: They create and develop different assests for the video game, such as concept art, sprites, and 3d models.</li>
+                <li>Audio Engineer: They are responsible for creating the sound effects heard in game to create an immersive environment and give a game its identity.</li>
+                <li>Composers: They are responsible for creating the music heard in a video game.</li>
+                <li>Level Designers: They are responsible for creating the levels seen in a video game.</li>
+                <li>Writers: They write dialogue for cutscenes, the player character, and non playable characters (NPCs) in the game.</li>
+            </ul>
+
+            <p>We have a list of people involved in making a video game, <strong>but what do the steps look like?</strong ></p>
+                <ol>
+                    <li>Concept and Design: Involves coming up with ideas for the game, including the gameplay, characters, and environments.</li>
+                    <li>Pre-Production: Involves taking the ideas from the concept and design creating a detailed plan for what the team has come up with.</li>
+                    <li>Production: This is where the team gets to work creating the game engine, programming mechanics, creating game assets, and testing the game.</li>
+                    <li>Testing: During this phase the team tests everything possible in order to fix bugs or glitches found in the game.</li>
+                    <li>Pre-Launch: This phase involves preparing the game for its launch, the team may release betas to get user feedback or start advertising their product to the public.</li>
+                    <li>Game Launch: The game officially gets released to the public. The product can be released physically or through digital platforms.</li>
+                    <li>Post-Launch: In this phase, the team will provide support for the game, whether it be adding patches to bugs they may have missed in their testing, or to add new content to the game.</li>
+                </ol>
+            
+    </section>
+
+    <section id="Why_do_I_enjoy_games?"> 
+        <h2>My gaming hobby!</h2>
+            <h3>Why do I enjoy video games?</h3>
+            <figure id="img_border">
+            <img src="images/man_gaming.jpg" class="image">
+            <figcaption>A young man playing a game on the couch.</figcaption>
+            </figure>
+            <p> To me, video games are a great way to distract myself from the real world for a bit. Life itself is quite stressful, constantly having to work on assignments for school as well as juggle a job, its nice to be able to sit down for a bit and chill with some of my friends in a game. That and there are very enjoyable games out there for every itch one may have. If you want to sit down and enjoy a really good story, theres games for that, or if your wanting to relieve stress and demolish a bunch of enemies, theres games for that too. Not only that but video games have also led me to having better relationships with the people in my life and even meeting people online, some of which Ive met years ago and still are in contact with. Video games offer a fun break from the stress and scares of the world and can lead people to connect with others online, sharing unforgetable experiences and moments with one another that can stick with you for the rest of your life.</p>
+            <p>In fact, online freindships caused by video games have such a hold on some people, its led to people making <a href="https://knowyourmeme.com/memes/last-online-5-years-ago">memes about experiences involving online friends they dont talk to anymore.</a></p>
+            <figure id="img_border"></figure>
+            <img src="images/06b.jpg" class="image"> 
+            <figcaption>A meme joking about the connection people have to other online users.</figcaption> 
+        </figure>     
+    </section>
+    <footer>
+        <p><a href="https://webpages.charlotte.edu/gcottrel/itis3135/primary/index3.html">Site designed by Gage Cottrell</a></p>
+    </footer>
+</main>
+</body>
+</html>

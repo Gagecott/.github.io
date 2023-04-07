@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Goofy Cat Productions</title>
+    <link href="styles/default.css" rel="stylesheet">
+    <style type="text/css">
+    body {
+        background-color: #320A28;
+        color: #AA0E3D;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .cat {
+        margin: 50px;
+        line-height:15px
+    }
+    .catWord {
+        text-align:auto;
+    }
+    #noPlease {
+        display: none;
+    }
+    div {
+        line-height: 30px;
+    }
+
+    a:link {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: darkgreen;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+</style>
+</head>
+<body>
+<header>
+    <h1>Gage Cottrell's Goofy Cat</h1>
+    <h3>Current time:<h3 id="date"></h3></h3>
+    
+    <h1> Hello! What is your name? And how are you doing today? </h1>
+    <input id="userName" placeholder="Name"> <br>
+    <input id="userMood" placeholder="Mood"><br>
+    <button onclick="userinput()"> Submit </button>
+    <h1 id= "greeting"></h1>
+    <script src="scripts/defaultscripts.js">
+    </script>
+    
+</header>
+<main>
+    <h2>Weclome to Goofy Cat Productions!</h2>
+    <p><img src="https://i.imgur.com/0iUFgqt.jpg" width="300" height="300" alt="Goofy cat!" class="goofyCat"></p>
+    <div >Press the button below to generate something goofy!</div>
+    <button onclick="goofyword()">
+        Goofy words!
+       </button>
+    <div id="word"></div>
+       <p>Manfacture silly kitties with the click of this button! </p>
+       <button onclick="sillycount()"> Generate Kitties!! </button>
+    <p> Silly kitties:</p><div id="counts"> 0 </div>
+
+    <p>Have this cat say something! </p>
+    <input id="catSpeak" placeholder="Meow!"> <br>
+    <button onclick="kittyWord()"> Submit </button>
+    <div class="cat">
+        <p class="catWord" id="catWord"> ...</p>
+        <pre>
+                        
+            ／l、      
+           （ﾟ､ ｡７   
+            l、ﾞ~ヽ    
+            じし(_,  )ノ
+        </pre>
+    </div>
+
+    <p> Wanna see something cool? </p>
+    <button onclick="yesCool()" id="yesButton"> Yes :)</button>
+    <button onclick="noCool()" id="noButton"> WHAT!!! No >:(</button>
+    <p id="yesPlease"></p>
+    <img id="noPlease" src="https://i.imgur.com/VlVur8M.gif" alt="Sad cat :("></p>
+
+</main>
+<footer>
+    <p><a href="index.html">Back to my 3135 Course!</a></p>
+    <p><a href="goofycatproductions.com/index.html">Site designed by Gage Cottrell</a></p>
+</footer>
+</body>
+</html>

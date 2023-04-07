@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+html {
+    background-color:  	#555450;
+    font-family: 'signika', sans-serif;
+    min-width: 290px;
+    color:#c0bebe;
+    background-image: url(images/vecteezy_skull-seamless-pattern-halloween-wallpaper-human-skeleton_5909894.jpg);
+    background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+a:link {
+color: #c0bebe;
+background-color: transparent;
+text-decoration: none;
+}
+
+a:visited {
+color: wheat;
+background-color: transparent;
+text-decoration: none;
+}
+
+a:hover {
+color: rgb(39, 7, 7);
+background-color: transparent;
+text-decoration: underline;
+}
+
+a:active {
+color: rgb(145, 3, 3);
+background-color: transparent;
+text-decoration: underline;
+}
+
+#galleryLink:link {
+color: #3b1313;
+background-color: transparent;
+text-decoration: underline;
+}
+#galleryLink:visited {
+color: wheat;
+background-color: transparent;
+text-decoration: underline;
+}
+
+#galleryLink:hover {
+color: rgb(177, 13, 13);
+background-color: transparent;
+text-decoration: underline;
+}
+
+#galleryLink:active {
+color: rgb(255, 0, 0);
+background-color: transparent;
+text-decoration: underline;
+}
+
+#navbar {
+position: fixed;
+min-width: 290px;
+top: 0px;
+left: 0px;
+width: 300px;
+height: 100%;
+border-right: solid;
+border-color: #c0bebe;
+background-color:  	#555450;
+
+}
+
+header {
+margin: 10px;
+text-align: center;
+font-size: 1.8em;
+font-weight: thin;
+background-color:  	#555450;
+}
+.Main-Doc header {
+text-align: left;
+margin: 0px;
+}
+
+#navbar ul {
+height: 88%;
+padding: 0;
+overflow-y: auto;
+overflow-x: hidden;
+background-color:  	#555450;
+}
+
+#navbar li {
+color: #c0bebe;
+border-top: 1px solid;
+list-style: none;
+position: relative;
+width: 100%;
+padding-top: 10px;
+padding-bottom: 10px;
+background-color:  	#555450;
+}
+.Main-Doc {
+position: absolute;
+margin-left: 310px;
+padding: 20px;
+margin-bottom: 110px;
+background-color: #555450;
+}
+
+section li {
+margin: 15px 0px 0px 20px;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+section {
+padding: 80px;
+}
+
+div.gallery {
+border-style: solid;
+border-color: whitesmoke;
+padding: 5px;
+margin: 50px;
+overflow: auto;
+background-color:#555450;
+width: auto;
+display: grid;
+grid-template-columns: auto auto;
+grid-template-rows: auto auto;
+grid-gap: 5px;
+justify-items: center;
+align-items: center;
+}
+    div.gallery_img {
+      margin: 20px;
+border: 5px solid #ccc;
+border-style: solid;
+float: left;
+width: 180px;
+padding: 20px;
+display:flex;
+flex-wrap:wrap;
+justify-content: center;
+align-items: center;
+
+}
+
+div.gallery_img:hover {
+border: 5px solid #777;
+}
+
+div.gallery_img img {
+width: 100%;
+height: auto;
+}
+
+div.desc {
+padding: 15px;
+text-align: center;
+}
+footer {
+border-top: 3px solid #ccc;
+}
+#notice {
+color:rgb(238, 231, 231)
+
+}
