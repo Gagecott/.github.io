@@ -3,6 +3,46 @@
 <head>
     <title>Gage Cottrell's Goofy Cat</title>
     <link href="styles/default.css" rel="stylesheet">
+    <script src="scripts/header.js" type="text/javascript" defer></script>
+    <script src="scripts/footer.js" type="text/javascript" defer></script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+    crossorigin="anonymous"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+var nextSlide = $(".slides img:first-child");
+var slideSource;
+var showSlideShow = function () {
+$(".slide").fadeOut(1000,function () {
+  if (nextSlide.length == 0){
+  nextSlide = $(".slides img:first-child");
+}
+else {
+  nextSlide = nextSlide.next();
+}
+
+slideSource = nextSlide.attr("src");
+$(".slide").attr("src", slideSource).fadeIn(1000);
+}
+);
+};
+
+var timer = setInterval(showSlideShow, 5000);
+$(".slide").click(function () {
+if (time != null) {
+clearInterval(timer);
+timer = null;
+}
+else {
+timer = setInterval(runSlideShow, 5000);
+}
+}
+);
+}
+);
+</script>  
+
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
@@ -50,48 +90,9 @@ img {
     </style>
 </head>
 <body>
-<header>
-    <h1>Gage Cottrell's Goofy Cat</h1>
-    <h2> Goofy Cat Slideshow!</h2>
-    <script
-			  src="https://code.jquery.com/jquery-3.6.4.min.js"
-			  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-			  crossorigin="anonymous"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-      var nextSlide = $(".slides img:first-child");
-      var slideSource;
-      var showSlideShow = function () {
-        $(".slide").fadeOut(1000,function () {
-            if (nextSlide.length == 0){
-            nextSlide = $(".slides img:first-child");
-        }
-        else {
-            nextSlide = nextSlide.next();
-        }
-
-    slideSource = nextSlide.attr("src");
-    $(".slide").attr("src", slideSource).fadeIn(1000);
-    }
-    );
-};
-
-var timer = setInterval(showSlideShow, 5000);
-$(".slide").click(function () {
-    if (time != null) {
-        clearInterval(timer);
-        timer = null;
-    }
-    else {
-        timer = setInterval(runSlideShow, 5000);
-    }
-}
-);
-}
-);
-</script>  
-</header>
+<dynamic-header></dynamic-header>
 <main> 
+    <h2> Goofy Cat Slideshow!</h2> 
         <img class="slide" src="images/GoofyCat.jpg" >
         <div class="slides"> 
             <img src="images/GoofyCat.jpg" />
@@ -102,10 +103,7 @@ $(".slide").click(function () {
     </div>
 </div>
 </main>
-
-<footer>
-    <p><a href="index.html">Back to my 3135 Course!</a></p>
-    <p><a href="index3.html">Site designed by Gage Cottrell</a></p>
-</footer>
+<dynamic-footer>
+</dynamic-footer>
 </body>
 </html>

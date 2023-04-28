@@ -3,6 +3,9 @@
 <head>
     <title>Goofy Cat Productions</title>
     <link href="styles/default.css" rel="stylesheet">
+    <script src="scripts/calculator_try.js"></script>
+    <script src="scripts/header.js" type="text/javascript" defer></script>
+    <script src="scripts/footer.js" type="text/javascript" defer></script>
     <style type="text/css">
         @import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
         body {
@@ -62,14 +65,10 @@ a:active {
 </style>
 </head>
 <body>
-<header>
-    <h1>Gage Cottrell's Goofy Cat</h1>
+<dynamic-header></dynamic-header>
+<main>
     <h2>My attempt at making a calculator.</h2>
     <h3>Tutorial not done as try works just fine.</h3>
-    <script src="scripts/calculator_try.js">
-    </script>
-</header>
-<main>
     <table class="calculator" >
         <tr> 
            <td colspan="3"> <input  class="screenDisplay" type="text" id="results" disabled /> </td> 
@@ -106,8 +105,5 @@ a:active {
     </table>
 
 </main>
-<footer>
-    <p><a href="index.html">Back to my 3135 Course!</a></p>
-    <p><a href="goofycatproductions.com/index.html">Site designed by Gage Cottrell</a></p>
-</footer>
+<dynamic-footer></dynamic-footer>
 </body>

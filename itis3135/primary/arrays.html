@@ -3,6 +3,9 @@
 <head>
     <title>Goofy Cat Productions</title>
     <link href="styles/default.css" rel="stylesheet">
+    <script src="scripts/arrays.js"></script>
+    <script src="scripts/header.js" type="text/javascript" defer></script>
+    <script src="scripts/footer.js" type="text/javascript" defer></script>
     <style type="text/css">
         @import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
         body {
@@ -39,12 +42,8 @@ a:active {
 </style>
 </head>
 <body>
-<header>
-    <h1>Gage Cottrell's Goofy Cat</h1>
-    <h2>Array list!</h2>
-    <script src="scripts/arrays.js">
-    </script>
-</header>
+<dynamic-header>
+</dynamic-header>
 <main> 
 
 <label>Please enter your Name: <input type="text" id="name" required><span id="noName"></span></label>
@@ -67,8 +66,6 @@ a:active {
 <table id="employeeResults"></table>
  </main>
 
- <footer>
-    <p><a href="index.html">Back to my 3135 Course!</a></p>
-    <p><a href="index3.html">Site designed by Gage Cottrell</a></p>
- </footer>
+ <dynamic-footer>
+ </dynamic-footer>
  </body>
